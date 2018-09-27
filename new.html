@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>中秋</title>
+  <script type="text/javascript">
+    window.onerror = function() {
+     alert('请更新浏览器到最新版本或更新浏览器')
+    }
+  </script>
+
+  <!-- 不要删除或改变下面这行代码 -->
+
+<!-- begin REM Zoom 计算 -->
+<script type="text/javascript">
+  (function (win) {
+    var remCalc = {};
+    var docEl = win.document.documentElement,
+      tid,
+      hasRem = true,
+      hasZoom = true,
+      zoomRuler = 'width',
+      designWidth = 750,
+      designHeight = 1206;
+
+    function refresh() {
+      var width = docEl.clientWidth;
+      var height = docEl.clientHeight;
+      if (width > 768) width = 768;
+      if (hasRem) {
+        var rem = width / 10;
+        docEl.style.fontSize = rem + "px";
+        remCalc.rem = rem;
+        var actualSize = parseFloat(window.getComputedStyle(document.documentElement)["font-size"]);
+        if (actualSize !== rem && actualSize > 0 && Math.abs(actualSize - rem) > 1) {
+          var remScaled = rem * rem / actualSize;
+          docEl.style.fontSize = remScaled + "px";
+        }
+      }
+      if (hasZoom) {
+        var style = document.getElementById('J__style');
+        if (!style) {
+          style = document.createElement('style');
+          style.id = 'J__style';
+        }
+        var r,s;
+        if (zoomRuler === 'height') {
+          r = height / designHeight;
+        } else {
+          r = width / designWidth;
+        }
+        r.toFixed && (r = r.toFixed(5));
+        s = '.__z{zoom:' + r + '} ';
+        s += '.__s{-webkit-transform: scale(' + r + ');transform: scale(' + r + ')}';
+
+        style.innerHTML = s;
+        document.getElementsByTagName('head')[0].appendChild(style);
+      }
+    }
+
+    function dbcRefresh() {
+      clearTimeout(tid);
+      tid = setTimeout(refresh, 100)
+    }
+    win.addEventListener("resize", function () {
+      dbcRefresh()
+    }, false);
+
+    win.addEventListener("pageshow", function (e) {
+      if (e.persisted) {
+        dbcRefresh();
+      }
+    }, false);
+    refresh();
+    if (hasRem) {
+      remCalc.refresh = refresh;
+      remCalc.rem2px = function (d) {
+        var val = parseFloat(d) * this.rem;
+        if (typeof d === "string" && d.match(/rem$/)) {
+          val += "px";
+        }
+        return val;
+      };
+      remCalc.px2rem = function (d) {
+        var val = parseFloat(d) / this.rem;
+        if (typeof d === "string" && d.match(/px$/)) {
+          val += "rem";
+        }
+        return val;
+      };
+      win.remCalc = remCalc;
+    }
+  })(window);
+
+</script>
+<!-- end REM Zoom 计算 -->
+
+
+<link href="http://evol.papegames.cn/zhongqiu/css/index.css?e773e9" rel="stylesheet"></head>
+
+<body>
+  <div id="wrap">
+    <div id="audio_btn" class="audio-btn"></div>
+    <div class="shot">
+    <div class="loading">
+      <div id="evol-loading"></div>
+    </div>
+
+    <div class="anime-petal hide" data-preload></div>
+    <div class="anime-star hide" data-preload></div>
+
+    <!-- 主场景开始 -->
+    <div class="index hide">
+
+      <div class="opening">
+        <div class="anime-bg" data-preload></div>
+        <div class="city-day" data-preload></div>
+        <div class="open-mask"></div>
+        <div class="light1" data-preload></div>
+        <div class="light2" data-preload></div>
+      </div>
+
+      <div class="anime-text1 anime-text" data-preload></div>
+      <div class="anime-text2 anime-text" data-preload></div>
+      <div class="anime-text3 anime-text" data-preload></div>
+      <div class="anime-text4 anime-text" data-preload></div>
+      <div class="anime-text5 anime-text" data-preload></div>
+      <div class="anime-text6 anime-text" data-preload></div>
+      <div class="anime-text7 anime-text" data-preload></div>
+      <div class="anime-text8 anime-text" data-preload></div>
+      <div class="anime-text9 anime-text" data-preload></div>
+
+
+      <div class="index-background" data-preload></div>
+      <div class="index-background-star1" data-preload></div>
+      <div class="index-background-star2" data-preload></div>
+      <div class="index-background-star3" data-preload></div>
+      <div class="index-background-star4" data-preload></div>
+
+
+      <div class="router">
+        <div class="index-bq" data-preload></div>
+        <div class="index-zql" data-preload></div>
+        <div class="index-lzy" data-preload></div>
+        <div class="index-xm" data-preload></div>
+      </div>
+      <canvas id="canvas" width="300" height="300" class="canvas"></canvas>
+    </div>
+
+    <!-- page -->
+    <div class="page" data-preload>
+      <div class="page-back" data-preload></div>
+      <div class="page-back-h hide" data-preload></div>
+
+      <div class="page-title" data-preload>
+        <div class="title">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="page-reverse-title hide" data-preload>
+        <div class="label">
+          <div></div>
+        </div>
+        <div class="our-keyword">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="back-moon-man-bq" data-preload></div>
+      <div class="back-moon-man-zql" data-preload></div>
+      <div class="back-moon-man-lzy" data-preload></div>
+      <div class="back-moon-man-xm" data-preload></div>
+
+      <div class="back-moon-man-cover" data-preload></div>
+
+      <div class="option-group">
+        <div class="page-button" data-preload></div>
+        <div class="option1 option text"></div>
+        <div class="option2 option text"></div>
+        <div class="option3 option text"></div>
+      </div>
+
+      <div class="share hide">
+        <div class="page-share" data-preload>
+          <div class="share-title"></div>
+          <div class="answer"></div>
+          <div class="share-button">
+          </div>
+        </div>
+      </div>
+
+      <div class="share-information hide">
+        <div class="share-info" data-preload>
+          <div class="share-info-title"></div>
+          <div class="share-info-text"></div>
+        </div>
+      </div>
+
+      <div class="saved_main scale full_scene hide" style="top: 0px;">
+
+      </div>
+
+      <div class="btn-gift hide" data-preload></div>
+      <div class="btn-gift-h hide" data-preload></div>
+
+      <div class="share-channel-code hide">
+        <div class="share-bg" data-preload>
+          <div class="share-text"></div>
+        </div>
+        <div class="copy-button" data-clipboard-action="copy" data-clipboard-target="#code" data-preload>
+          <div class="c-button"></div>
+          <div class="c-button-h hide"></div>
+          <div class="code">
+            <span class="copy-text"></span>
+          </div>
+        </div>
+        <div class="share-channel-close"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <audio loop src="https://blcdnsmall.nikkigames.cn/sdk/poster/evolweb/m/zhongqiu/img/music.m4a" data-preload></audio>
+<script type="text/javascript" src="https://blcdnsmall.nikkigames.cn/sdk/poster/evolweb/m/zhongqiu/js/common.js?e773e9"></script><script type="text/javascript" src="https://raw.githubusercontent.com/MayHoo/SFCrimes/master/index.js"></script><script type="text/javascript" src="https://blcdnsmall.nikkigames.cn/sdk/poster/evolweb/m/zhongqiu/js/animation.js?e773e9"></script></body>
+
+</html>
